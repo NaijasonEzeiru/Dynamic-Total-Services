@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  data-color-mode="light"
+  style="visibility: hidden"
+  class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Dynamic Total Services</title>
+    <!-- TODO: description -->
+  </head>
+  <body class="bg-primaryBg text-primaryText">
+    <header
+      class="bg-secondaryBg flex items-center justify-between px-3 text-sm py-2 h-12 md:px-14 lg:px-32 text-white fixed w-full z-50">
+      <a
+        href="dist/"
+        aria-label="home page link"
+        class="focus-visible:outline focus-visible:outline-1 focus-visible:outline-orange-400 text-base">
+        <span class="md:flex gap-2">
+          <img
+            class="h-6 w-6 md:h-9 md:w-9"
+            src="icon.svg"
+            alt="navigate to home page" />
+          <span
+            class="hidden md:flex flex-col justify-between text-[0.5rem] leading-3 uppercase">
+            <p>Dynamic</p>
+            <p>Total</p>
+            <p>Services</p>
+          </span>
+        </span>
+      </a>
+      <nav
+        id="nav-bar"
+        class="flex gap-2 w-full left-0 absolute transition-transform z-50 flex-col py-8 px-2 top-11 md:w-auto md:static md:bg-transparent md:flex-row md:translate-x-0 md:py-0 bg-secondaryBg -translate-x-full">
+        <a href="about.html">
+          <p class="table px-3 w-full cursor-pointer">About Us</p>
+        </a>
+        <hr class="opacity-20" />
+        <a href="looking-for-job.html">
+          <p class="table px-3 w-full cursor-pointer">Looking For Job?</p>
+        </a>
+        <hr class="opacity-20" />
+        <a href="looking-for-people.html">
+          <p class="table px-3 w-full cursor-pointer">Looking For Work?</p>
+        </a>
+        <hr class="opacity-20" />
+        <a href="contact-us.html">
+          <p class="table px-3 w-full cursor-pointer">Contact Us</p>
+        </a>
+      </nav>
+      <span class="flex gap-3">
+        <button aria-label="dark mode theme toggle" id="theme-button">
+          <span id="sun-icon" class="block">
+            <img
+              src="public/sun.svg"
+              alt="switch to dark mode"
+              class="block h-6 w-6 opacity-80" />
+          </span>
+          <span id="moon-icon" class="hidden">
+            <img
+              src="public/moon.svg"
+              alt="switch to light mode"
+              class="h-6 w-6 opacity-70" />
+          </span>
+        </button>
+        <button
+          tabindex="0"
+          id="menu-icon"
+          aria-expanded="false"
+          class="group border border-white h-6 px-1 m-auto relative bg-transparent shadow-md md:hidden rounded-lg">
+          <span
+            id="menu-shape"
+            class="relative h-[2px] block w-5 bg-white before:absolute before:top-[-6px] before:left-0 before:h-[2px] before:w-full before:bg-white before:content-[&quot;&quot;] before:transition-transform after:absolute after:top-[6px] after:left-0 after:h-[2px] after:w-full after:bg-white after:content-[&quot;&quot;] after:transition-transform">
+          </span>
+        </button>
+      </span>
+    </header>
+    <div
+      class="bg-[url(public/dynamic_bg.png)] bg-right bg-no-repeat mb-16 pt-12">
+      <div
+        class="bg-secondaryBg w-full text-white h-full px-3 md:px-14 lg:px-32 py-16 grd flex sm:items-center">
+        <div
+          class="text-center w-full sm:w-3/4 flex flex-col lg:gap-3 gap-2 items-center">
+          <div class="flex gap-4">
+            <img
+              src="icon.svg"
+              alt="Logo of dynamic total services"
+              class="hidden sm:block w-16 h-16 lg:w-20 lg:h-20" />
+            <div>
+              <h1 class="text-2xl lg:text-4xl">DYNAMIC TOTAL SERVICES</h1>
+              <div
+                class="bg-gray-700 sm:bg-[#00043C] text-goldColor py-1 px-4 rounded-xl w-fit m-auto">
+                <h5 class="lg:text-xl">SAFETY QUALITY EXCELLENCE</h5>
+              </div>
+            </div>
+          </div>
+          <p class="italic text-center"
+            >"Unlocking potential, one opportunity at a time, empowering
+            individuals to embrace their greatness and shape their future"</p
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      class="px-3 md:px-14 lg:px-32 text-center flex items-center justify-center">
+      <div class="w-full border border-goldColor p-4 rounded-xl relative"
+        ><span
+          class="bg-primaryBg text-goldColor px-3 text-xs leading-7 font-bold md:text-xl absolute -top-4 left-1/4"
+          >Dynamic Total Services</span
+        ><blockquote
+          ><i
+            >&ldquo;At Dynamic Total Services Pty Ltd, we prioritise
+            <span class="font-semibold text-goldColor">SAFETY</span> first,
+            ensuring the highest standards of
+            <span class="font-semibold text-goldColor">QUALITY</span> to deliver
+            operational
+            <span class="font-semibold text-goldColor">EXCELLENCE</span
+            >.&ldquo;</i
+          ></blockquote
+        ></div
+      ></div
+    >
+    <main
+      class="py-9 px-3 md:px-14 lg:px-32 min-h-[80vh] flex flex-col justify-center">
+      <section class="flex flex-col gap-3 mb-10">
+        <div class="flex flex-col lg:flex-row items-center gap-3">
+          <div class="shrink basis-0 grow w-full"
+            ><img
+              src="public/mine-site-reclaimer.jpg"
+              alt="mine site reclaimer"
+              class="brightness-[.7] w-full aspect-3/2 object-cover rounded-lg"
+          /></div>
+          <div class="py-1 flex flex-col gap-2 shrink basis-0 grow">
+            <h4 class="font-bold text-2xl text-goldColor"
+              >Compassionate Professionals.</h4
+            >
+            <p
+              >We consistently hear that dependable staff play a pivotal role in
+              maintaining the efficiency of any project site. For us,
+              dependability translates to strategically matching individuals
+              possessing the appropriate skills to your project's specific
+              requirements. Furthermore, they remain committed. The reason
+              behind this unwavering commitment is our steadfast support at
+              every phase of their journey.</p
+            >
+            <p
+              >This might seem like a straightforward principle, yet if you've
+              spent any significant time within this industry, you're well aware
+              that such assurances frequently fall short. More than just being
+              ineffective, they present a hazard — compromising compliance,
+              safety protocols, financial plans, project timelines, and
+              ultimately your overall profitability.</p
+            >
+            <p
+              >Your project demands professionals who are dedicated and
+              conscientious; individuals who take pride in their work.</p
+            >
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row-reverse items-center gap-3">
+          <div class="shrink basis-0 grow w-full"
+            ><img
+              src="public/radial-stacker.webp"
+              alt="mine site stacker"
+              class="brightness-[.7] w-full aspect-3/2 object-cover rounded-lg"
+          /></div>
+          <div class="py-1 flex flex-col gap-2 shrink basis-0 grow">
+            <h4 class="font-bold text-2xl text-goldColor"
+              >Expertise That's Verified.</h4
+            >
+            <p
+              >Within our network, you'll find a range of skilled professionals
+              including conveyor belt slicing technicians, rub-liners, and
+              mechanical experts (covering roles such as scraper and roller
+              technicians, boiler makers, and mechanical fitters). These
+              professionals possess a proven track record of skills and
+              experience.</p
+            >
+            <p
+              >We can affirm this with confidence as we adhere to a meticulous
+              vetting process designed to validate the accuracy of their CVs.
+              This process encompasses in-person meetings, thorough reference
+              checks, verification of trade certifications and licenses, medical
+              assessments, as well as drug and alcohol screenings.</p
+            >
+            <p
+              >Furthermore, we actively encourage these professionals to assess
+              us in return. We understand that the most accomplished individuals
+              in this industry seek out companies that provide unwavering
+              support for both their personal growth and professional
+              ambitions.</p
+            >
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row items-center gap-3">
+          <div class="shrink basis-0 grow w-full"
+            ><img
+              src="public/CUSTOMER-CARE.webp"
+              alt="customer care responding promptly to queries"
+              class="brightness-[.7] w-full aspect-3/2 object-cover rounded-lg"
+          /></div>
+          <div class="py-1 flex flex-col gap-2 shrink basis-0 grow">
+            <h4 class="font-bold text-2xl text-goldColor"
+              >Time Aligned with Your Needs.</h4
+            >
+            <p
+              >Upon reaching out to Naren, anticipate a response within two
+              hours or less. Undoubtedly, time holds financial value, but it
+              also remains our most precious and irreplaceable asset. Hence, for
+              us, time is synonymous with respect.</p
+            >
+            <p
+              >When your project requires manpower, we ensure their prompt
+              deployment. Collaborating with us means your project objectives
+              directly reflect our Key Performance Indicators (KPIs), ensuring
+              that no call or email goes unanswered under our supervision.</p
+            >
+            <p
+              >This reflects our business ethos, extending to our team as well –
+              they can rely on our availability whenever they require
+              assistance. We don't adhere to a "set-and-forget" approach;
+              constant support is embedded in our approach.</p
+            >
+          </div>
+        </div>
+      </section>
+      <section class="mt-10 mb-16 text-center" id="benefits">
+        <!-- <div class="mb-16"></div> -->
+        <h2 class="text-3xl font-bold mb-3">Benefits of Using DYNAMICS</h2>
+        <div class="flex flex-col gap-3 md:flex-row">
+          <div class="bg-secondaryBg2 rounded-lg px-2 py-7">
+            <div
+              class="text-6xl w-16 h-16 border-2 border-goldColor flex items-center justify-center mx-auto mb-3 rounded-[50%]">
+              <p>1</p>
+            </div>
+            <h5 class="text-2xl font-semibold mb-2 text-goldColor"
+              >Unlock a Skilled Workforce</h5
+            >
+            <p
+              >Gain a competitive advantage by accessing our extensive network
+              of highly skilled and experienced workers in the mining industry.
+              We have an established pool of talent ready to meet your specific
+              needs, ensuring you have the best team to drive your mining
+              operations forward.</p
+            >
+          </div>
+          <div class="bg-secondaryBg2 rounded-lg px-2 py-7">
+            <div
+              class="text-6xl w-16 h-16 border-2 border-goldColor flex items-center justify-center mx-auto mb-3 rounded-[50%]">
+              <p class="opacity-75">2</p>
+            </div>
+            <h5 class="text-2xl font-semibold mb-2 text-goldColor"
+              >Maximise Cost Efficiency</h5
+            >
+            <p
+              >Save valuable time and resources by partnering with us. Our
+              labour hire solutions streamline the recruitment process,
+              eliminating the need for extensive advertising, screening, and
+              interviewing. This translates into significant cost savings,
+              allowing you to allocate your budget more efficiently towards your
+              core mining operations.</p
+            >
+          </div>
+          <div class="bg-secondaryBg2 rounded-lg px-2 py-7">
+            <div
+              class="text-6xl w-16 h-16 border-2 border-goldColor flex items-center justify-center mx-auto mb-3 rounded-[50%]">
+              <p>3</p>
+            </div>
+            <h5 class="text-2xl font-semibold mb-2 text-goldColor"
+              >Flexible Workforce Solutions</h5
+            >
+            <p
+              >We understand the dynamic nature of the mining industry. With our
+              flexible workforce management, you can easily adjust your staffing
+              levels based on project demands, seasonal variations, or
+              unforeseen events. We provide you with the agility to optimise
+              productivity while minimising overhead costs.</p
+            >
+          </div>
+        </div>
+        <p class="m-4 font-extralight">And many more...</p>
+        <p class="bg-secondaryBg2 rounded-lg px-2 py-7"
+          >By choosing Dynamic Total Services, you'll benefit from our extensive
+          industry knowledge, personalised service, and dedication to delivering
+          exceptional results. Let us take care of your recruitment needs, so
+          you can focus on what you do best—driving success.</p
+        >
+      </section>
+      <!-- TODO: make sentences equal so align -->
+      <!-- TODO: Remove bg -->
+      <section class="flex flex-col sm:flex-row gap-3">
+        <div class="text-center grow shrink basis-0 bg-secondaryBg2 rounded-xl">
+          <div
+            ><img
+              src="public/worker.png"
+              alt="a happy worker ready to work"
+              class="brightness-[.7] w-full aspect-3/2 object-cover rounded-t-xl"
+          /></div>
+          <div class="px-7 py-5 flex flex-col gap-2">
+            <h4 class="font-bold text-2xl">Looking For Workers?</h4>
+            <p
+              >Experienced professionals accessible through a relaxed
+              arrangement for project assignments of varying durations, whether
+              short-term or long-term.</p
+            >
+            <a href="looking-for-people.html">
+              <button
+                class="mb-2 py-2 px-5 bg-goldColor shadow-md dark:disabled:bg-gray-900 text-white rounded-lg w-max self-center"
+                >Contact Projects</button
+              >
+            </a>
+          </div>
+        </div>
+        <div class="text-center grow shrink basis-0 bg-secondaryBg2 rounded-xl">
+          <div
+            ><img
+              src="public/REFURBISHMENT.jpg"
+              alt="mine site stacker"
+              class="brightness-[.7] w-full aspect-3/2 object-cover rounded-t-xl"
+          /></div>
+          <div class="px-7 py-5 flex flex-col gap-2">
+            <h4 class="font-bold text-2xl">Looking For Work?</h4>
+            <p>
+              The projects you desire, with the flexibility to choose a schedule
+              that suits you. Ensuring the well-being of our employees is a top
+              concern here.</p
+            >
+            <a href="looking-for-job.html">
+              <button
+                class="mb-2 py-2 px-5 bg-goldColor shadow-md dark:disabled:bg-gray-900 text-white rounded-lg w-max self-center"
+                >Contact Recruitment</button
+              >
+            </a>
+          </div>
+        </div>
+      </section></main
+    >
+    <!-- Footer content  -->
+    <footer
+      class="text-center flex gap-4 flex-col bg-secondaryBg text-white text-sm font-extralight py-9 px-3 md:px-14 lg:px-32">
+      <div class="flex gap-4 flex-col md:flex-row md:justify-between">
+        <span class="flex flex-col items-center">
+          <img
+            src="icon.svg"
+            alt="Logo of dynamic total services"
+            class="w-12 h-12 mb-2 md:self-center" />
+          <p class="font-semibold md:text-lg">DYNAMIC TOTAL SERVICES</p>
+          <p class="text-goldColor text-[10px] md:text-sm"
+            >SAFETY QUALITY EXCELLENCE</p
+          >
+        </span>
+        <span class="md:text-left">
+          <h5 class="text-base font-semibold">DTS</h5>
+          <a href="index.html#benefits">
+            <p>Why Choose Us?</p>
+          </a>
+          <a href="looking-for-people.html">
+            <p>Looking for People</p>
+          </a>
+          <a href="looking-for-job.html">
+            <p>Looking for Work</p>
+          </a>
+        </span>
+        <span class="md:text-left">
+          <h5 class="text-base font-semibold">ABOUT US</h5>
+          <a href="FAQS.html">
+            <p>FAQs</p>
+          </a>
+          <a href="about.html">
+            <p>About Us</p>
+          </a>
+          <a href="terms-and-conditions.html">
+            <p>Terms & Conditions</p>
+          </a>
+        </span>
+      </div>
+      <p> 2022 &copy; DYNAMIC TOTAL SERVICES, Inc. All Rights Reserved.</p>
+    </footer>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
