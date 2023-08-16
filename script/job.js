@@ -18,6 +18,7 @@ jobForm.addEventListener('submit', async (e) => {
   ]);
   fetch('https://emails-forwarding.onrender.com/dts', {
     method: 'POST',
+    mode: 'no-cors',
     headers: {
       'Content-Type': 'application/json'
     },
