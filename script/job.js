@@ -16,7 +16,7 @@ jobForm.addEventListener('submit', async (e) => {
     jobMessage,
     jobSubject
   ]);
-  fetch('http://localhost:4000/dts', {
+  fetch('https://emails-forwarding.onrender.com/dts', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

@@ -7,7 +7,7 @@ const contactMessage = document.getElementById('contact-message');
 
 contactForm.addEventListener('submit', async (e) => {
   e.preventDefault();
-  fetch('http://localhost:4000/dts', {
+  fetch('https://emails-forwarding.onrender.com/dts', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
