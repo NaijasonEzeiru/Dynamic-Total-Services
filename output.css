@@ -843,6 +843,10 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.bg-\[\#00043cc2\] {
+  background-color: #00043cc2;
+}
+
 .bg-goldColor {
   background-color: var(--gold-color);
 }
@@ -1164,15 +1168,15 @@ video {
   }
 }
 
-/* @media (min-width: 800px) {
+@media (min-width: 800px) {
   .grd {
     background: linear-gradient(
       215deg,
       rgba(226, 179, 85, 0.54) 0%,
-      #00043c 31%,
+      #00043c 50%
     );
   }
-} */
+}
 
 .selection\:bg-goldColor *::-moz-selection {
   background-color: var(--gold-color);

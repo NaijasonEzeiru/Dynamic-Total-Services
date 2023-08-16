@@ -40,11 +40,11 @@
         </a>
         <hr class="opacity-20" />
         <a href="looking-for-job.html">
-          <p class="table px-3 w-full cursor-pointer">Looking For Job?</p>
+          <p class="table px-3 w-full cursor-pointer">Looking For Work?</p>
         </a>
         <hr class="opacity-20" />
         <a href="looking-for-people.html">
-          <p class="table px-3 w-full cursor-pointer">Looking For Work?</p>
+          <p class="table px-3 w-full cursor-pointer">Looking For People?</p>
         </a>
         <hr class="opacity-20" />
         <a href="contact-us.html">
@@ -90,7 +90,7 @@
           >The projects that you want with a say in the roaster that works for
           you.</h4
         >
-        <form action="" class="flex flex-col gap-2">
+        <form id="job-form" class="flex flex-col gap-2">
           <span class="flex flex-col gap-2 md:flex-row">
             <label class="w-full">
               <p
@@ -100,6 +100,7 @@
               <input
                 type="text"
                 class="w-full border border-gray-500 invalid:text-red-600 px-2 bg-transparent h-9 rounded-md"
+                id="job-first-name"
                 required
                 minlength="2"
                 maxlength="20" />
@@ -113,6 +114,7 @@
                 type="text"
                 class="w-full border border-gray-500 invalid:text-red-600 px-2 bg-transparent h-9 rounded-md"
                 required
+                id="job-last-name"
                 minlength="2"
                 maxlength="20" />
             </label>
@@ -125,6 +127,7 @@
               ><input
                 type="email"
                 class="w-full border border-gray-500 invalid:text-red-600 px-2 bg-transparent h-9 rounded-md"
+                id="job-email"
                 required
                 maxlength="40" />
             </label>
@@ -133,6 +136,7 @@
               <input
                 type="text"
                 class="w-full border border-gray-500 invalid:text-red-600 px-2 bg-transparent h-9 rounded-md"
+                id="job-qualifications"
                 minlength="3"
                 maxlength="40" />
             </label>
@@ -146,6 +150,7 @@
               type="text"
               class="w-full border border-gray-500 invalid:text-red-600 px-2 bg-transparent h-9 rounded-md"
               required
+              id="job-subject"
               maxlength="100" />
           </label>
           <label>
@@ -155,7 +160,7 @@
             >
             <textarea
               name=""
-              id=""
+              id="job-message"
               cols="30"
               rows="10"
               class="w-full border border-gray-500 invalid:text-red-600 px-2 bg-transparent rounded-md"
@@ -215,5 +220,6 @@
     </footer>
 
     <script type="module" src="./main.js"></script>
+    <script type="module" src="./script/job.js"></script>
   </body>
 </html>

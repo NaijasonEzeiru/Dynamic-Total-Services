@@ -40,11 +40,11 @@
         </a>
         <hr class="opacity-20" />
         <a href="looking-for-job.html">
-          <p class="table px-3 w-full cursor-pointer">Looking For Job?</p>
+          <p class="table px-3 w-full cursor-pointer">Looking For Work?</p>
         </a>
         <hr class="opacity-20" />
         <a href="looking-for-people.html">
-          <p class="table px-3 w-full cursor-pointer">Looking For Work?</p>
+          <p class="table px-3 w-full cursor-pointer">Looking For People?</p>
         </a>
         <hr class="opacity-20" />
         <a href="contact-us.html">
@@ -91,7 +91,7 @@
           >We have experienced staff on a casual basis for short or long term
           projects</h4
         >
-        <form action="" class="flex flex-col gap-2">
+        <form id="people-form" class="flex flex-col gap-2">
           <span class="flex flex-col gap-2 md:flex-row">
             <label class="w-full">
               <p
@@ -100,6 +100,7 @@
               >
               <input
                 type="text"
+                id="people-first-name"
                 class="w-full border border-gray-500 invalid:text-red-600 px-2 bg-transparent h-9 rounded-md"
                 required
                 minlength="2"
@@ -112,6 +113,7 @@
               >
               <input
                 type="text"
+                id="people-last-name"
                 class="w-full border border-gray-500 invalid:text-red-600 px-2 bg-transparent h-9 rounded-md"
                 required
                 minlength="2"
@@ -123,6 +125,7 @@
               <p>Business Name:</p>
               <input
                 type="text"
+                id="people-business-name"
                 class="w-full border border-gray-500 invalid:text-red-600 px-2 bg-transparent h-9 rounded-md"
                 minlength="3"
                 maxlength="40" />
@@ -133,6 +136,7 @@
                 <span class="text-xs font-light italic">(required)</span></p
               ><input
                 type="email"
+                id="people-email"
                 class="w-full border border-gray-500 invalid:text-red-600 px-2 bg-transparent h-9 rounded-md"
                 required
                 maxlength="40" />
@@ -145,6 +149,7 @@
             >
             <input
               type="text"
+              id="people-subject"
               class="w-full border border-gray-500 invalid:text-red-600 px-2 bg-transparent h-9 rounded-md"
               required
               maxlength="100" />
@@ -155,8 +160,7 @@
               <span class="text-xs font-light italic">(required)</span></p
             >
             <textarea
-              name=""
-              id=""
+              id="people-message"
               cols="30"
               rows="10"
               class="w-full border border-gray-500 invalid:text-red-600 px-2 bg-transparent rounded-md"
@@ -215,5 +219,6 @@
     </footer>
 
     <script type="module" src="./main.js"></script>
+    <script type="module" src="./script/people.js"></script>
   </body>
 </html>

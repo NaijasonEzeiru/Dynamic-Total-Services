@@ -1,5 +1,15 @@
 let ham = false;
 
+const matcher = window.matchMedia('(prefers-color-scheme: dark)');
+const menuIcon = document.getElementById('menu-icon');
+const themeButton = document.getElementById('theme-button');
+const sunIcon = document.getElementById('sun-icon');
+const moonIcon = document.getElementById('moon-icon');
+const navBar = document.getElementById('nav-bar');
+const menuShape = document.getElementById('menu-shape');
+
+let x = !menuIcon.getAttribute('aria-expanded');
+
 const menuClassLists = [
   'duration-1000',
   'before:-rotate-45',
@@ -19,7 +29,6 @@ const setHam = () => {
 };
 
 function toggleTheme() {
-  console.log('theme');
   if (document.documentElement.getAttribute('data-color-mode') === 'light') {
     setDarkTheme();
   } else {
@@ -43,16 +52,8 @@ function setLightTheme() {
 
 if (localStorage.getItem('data-color-mode') === 'dark') {
   document.documentElement.setAttribute('data-color-mode', 'dark');
+  setDarkTheme();
 }
-
-const matcher = window.matchMedia('(prefers-color-scheme: dark)');
-const menuIcon = document.getElementById('menu-icon');
-const themeButton = document.getElementById('theme-button');
-const sunIcon = document.getElementById('sun-icon');
-const moonIcon = document.getElementById('moon-icon');
-const navBar = document.getElementById('nav-bar');
-const menuShape = document.getElementById('menu-shape');
-let x = !menuIcon.getAttribute('aria-expanded');
 
 if (
   localStorage.getItem('data-color-mode') === 'dark' ||
@@ -61,9 +62,7 @@ if (
   document.documentElement.setAttribute('data-color-mode', 'dark');
 }
 
-function onUpdate() {}
-
-const menuToggle = () => {
+function menuToggle() {
   x = !x;
   menuIcon.setAttribute('aria-expanded', x);
   setHam();
@@ -74,9 +73,8 @@ const menuToggle = () => {
     menuShape.classList.remove(...menuClassLists);
     navBar.classList.add('-translate-x-full');
   }
-};
+}
 
 menuIcon.addEventListener('click', menuToggle);
 themeButton.addEventListener('click', toggleTheme);
-
 document.documentElement.setAttribute('style', '"visibility: visible"');
