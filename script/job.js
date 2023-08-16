@@ -8,17 +8,8 @@ const jobMessage = document.getElementById('job-message');
 
 jobForm.addEventListener('submit', async (e) => {
   e.preventDefault();
-  console.log([
-    jobEmail,
-    jobFirstName,
-    jobLastName,
-    jobQualifications,
-    jobMessage,
-    jobSubject
-  ]);
   fetch('https://emails-forwarding.onrender.com/dts', {
     method: 'POST',
-    mode: 'no-cors',
     headers: {
       'Content-Type': 'application/json'
     },

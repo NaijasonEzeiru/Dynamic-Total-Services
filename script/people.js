@@ -9,17 +9,8 @@ const peopleMessage = document.getElementById('people-message');
 
 peopleForm.addEventListener('submit', async (e) => {
   e.preventDefault();
-  console.log([
-    peopleEmail,
-    peopleFirstName,
-    peopleLastName,
-    peopleBusinessName,
-    peopleMessage,
-    peopleSubject
-  ]);
   fetch('https://emails-forwarding.onrender.com/dts', {
     method: 'POST',
-    mode: 'no-cors',
     headers: {
       'Content-Type': 'application/json'
     },
