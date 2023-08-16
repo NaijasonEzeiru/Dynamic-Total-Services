@@ -33,6 +33,6 @@ peopleForm.addEventListener('submit', async (e) => {
       message: peopleMessage.value
     })
   });
-  // alert('Form submitted succesfully');
-  // peopleForm.reset();
+  alert('Form submitted succesfully');
+  peopleForm.reset();
 });
