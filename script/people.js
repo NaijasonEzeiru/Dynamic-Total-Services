@@ -9,7 +9,7 @@ const peopleMessage = document.getElementById('people-message');
 
 peopleForm.addEventListener('submit', async (e) => {
   e.preventDefault();
-  fetch('https://emails-forwarding.onrender.com/dts', {
+  const res = await fetch('https://emails-forwarding.onrender.com/dts', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -25,6 +25,7 @@ peopleForm.addEventListener('submit', async (e) => {
       message: peopleMessage.value
     })
   });
-  alert('Form submitted succesfully');
+  const response = await res.json();
+  alert(response?.message);
   peopleForm.reset();
 });

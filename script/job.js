@@ -8,7 +8,7 @@ const jobMessage = document.getElementById('job-message');
 
 jobForm.addEventListener('submit', async (e) => {
   e.preventDefault();
-  fetch('https://emails-forwarding.onrender.com/dts', {
+  const res = await fetch('https://emails-forwarding.onrender.com/dts', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -24,6 +24,7 @@ jobForm.addEventListener('submit', async (e) => {
       message: jobMessage.value
     })
   });
-  alert('Form submitted succesfully');
+  const response = await res.json();
+  alert(response?.message);
   jobForm.reset();
 });
