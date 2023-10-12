@@ -77,4 +77,3 @@ function menuToggle() {
 
 menuIcon.addEventListener('click', menuToggle);
 themeButton.addEventListener('click', toggleTheme);
-document.documentElement.setAttribute('style', '"visibility: visible"');
